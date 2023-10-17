@@ -1,0 +1,22 @@
+/* Menu item */
+.quantity-container {
+	@apply relative flex items-center w-[80px] bg-secondary px-[2px] py-1 rounded-md text-main-black;
+}
+.quantity-container.plusButton > .quantity-input {
+	@apply w-[50px] border-b-2 border-main-black font-[500];
+}
+
+.quantity-input {
+	@apply w-full h-full bg-transparent text-center outline-none border-none;
+}
+.quantity-btn {
+	@apply flex flex-col;
+}
+.quantity-btn svg {
+	@apply w-3 cursor-pointer hover:text-[#e2cebc] active:text-[#d4c1b0];
+}
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg-color: #ebdbcc;
+	--text-color: #222325;
+	--primary-color: #d09e55;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* Global styles */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.bg-color {
+	background-color: var(--bg-color);
+}
+.primary-color {
+	color: var(--primary-color);
+}
+.text-color {
+	color: var(--text-color);
+}
+
+/* Cart */
+.cart-container {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ebdbcc;
+	padding: 10px 38px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: transform 0.1s linear;
+}
+.cart-container:hover {
+	transform: scale(0.98);
+}
+.cart {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+}
+.cart svg {
+	width: 24px;
+	height: 24px;
+}
+.cart-badge {
+	position: absolute;
+	top: -8px;
+	right: -16px;
+	background-color: #d09e55;
+	line-height: 1;
+	padding: 4px 8px;
+	border-radius: 50%;
+	user-select: none;
+	color: #222325;
+}
+
+/* Menu list*/
+.menu-list {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 16px;
+}
