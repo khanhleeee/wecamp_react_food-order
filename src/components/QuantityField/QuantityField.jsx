@@ -2,8 +2,6 @@
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import { ChevronUpIcon } from '@heroicons/react/24/outline'
 
-import classNames from 'classnames'
-
 import './QuantityField.css'
 
 function QuantityField({ quantity, setQuantity, plusButton }) {
@@ -24,10 +22,8 @@ function QuantityField({ quantity, setQuantity, plusButton }) {
 		}
 	}
 
-	const quantityClasses = classNames('quantity-container', { plusButton })
-
 	return (
-		<div className={quantityClasses}>
+		<div className='quantity-container'>
 			{plusButton ? (
 				<div className='flex items-center gap-2'>
 					<span
